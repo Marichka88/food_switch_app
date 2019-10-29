@@ -1,0 +1,11 @@
+{
+  id: food.id,
+  name: food.name,
+  energy: food.energy,
+  fat: food.fat,
+  saturated_fat: food.saturated_fat,
+  sugar: food.sugar,
+  sodium: food.sodium,
+  default_filter: food.default_filter
+
+}

@@ -1,0 +1,3 @@
+@foods.map do |food|
+  render partial: "food.json.jb", locals: {food: food}
+end
