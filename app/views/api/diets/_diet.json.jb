@@ -1,0 +1,4 @@
+{
+  id: diet.id,
+  name: diet.name
+}

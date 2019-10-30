@@ -7,5 +7,8 @@ class Food < ApplicationRecord
   has_many :diet_foods
   has_many :diets, through: :diet_foods
 
-
+  def default_options
+    # healthy_connections.where(filter: default_filter).map {|suggestion| suggestion.health_suggestion }
+    healthy_options.where("suggestions.filter = ?", default_filter)
+  end
 end

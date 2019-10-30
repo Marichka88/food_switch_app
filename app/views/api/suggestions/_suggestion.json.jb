@@ -1,0 +1,6 @@
+{
+  id: suggestion.id,
+  original_food_id: suggestion.original_food_id,
+  health_suggestion_id: suggestion.health_suggestion_id,
+  filter: suggestion.filter
+}
