@@ -2,6 +2,13 @@ class Api::FoodsController < ApplicationController
   
   def index
     @foods = Food.all
+
+    search_term = params[:search]
+
+    if search_term
+      @foods = @foods.where("name iLIKE ?", "%#{search_term}%")
+    end
+
     render 'index.json.jb'
   end
 
