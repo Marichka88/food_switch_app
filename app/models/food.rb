@@ -1,6 +1,5 @@
 class Food < ApplicationRecord
   enum default_filter: {SaltSwitch: 1, GlutenSwitch: 2, FatSwitch: 3, EnergySwitch: 4, SugarSwitch:5 }
-
   has_many :healthy_connections, class_name: "Suggestion", foreign_key: "original_food_id"
   has_many :healthy_options, through: :healthy_connections, source: :health_suggestion
 
