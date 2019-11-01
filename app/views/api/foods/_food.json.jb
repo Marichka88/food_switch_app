@@ -7,6 +7,28 @@
   saturated_fat: food.saturated_fat,
   sugar: food.sugar,
   sodium: food.sodium,
-  default_filter: food.default_filter
-
+  default_filter: food.default_filter,
+  diet_names: food.diets.map {|diet| diet.name },
+  #suggestions: food.suggestions
+  # suggestions: food.suggestions.map { |suggestion| 
+  #   render partial: "api/suggestions/suggestion.json.jb", locals: {suggestion: :suggestion} }
+  #suggestions: (render partial: "api/suggestions/suggestion.json.jb", locals: {suggestion: food.suggestion})
+  healthy_options: food.healthy_options.map { |healthy_food| 
+    {
+      id: healthy_food.id,
+      name: healthy_food.name,
+      energy: healthy_food.energy,
+      fat: healthy_food.fat,
+      saturated_fat: healthy_food.saturated_fat,
+      sugar: healthy_food.sugar,
+      sodium: healthy_food.sodium,
+      default_filter: healthy_food.default_filter,
+      diet_names: healthy_food.diets.map {|diet| diet.name },
+    }
+  }
 }
+
+
+  # images: product.images.map { |image| 
+  #   render partial: "api/images/image.json.jb", locals: {image: image} 
+  # },
