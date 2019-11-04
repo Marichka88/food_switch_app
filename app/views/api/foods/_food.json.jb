@@ -9,10 +9,6 @@
   sodium: food.sodium,
   default_filter: food.default_filter,
   diet_names: food.diets.map {|diet| diet.name },
-  #suggestions: food.suggestions
-  # suggestions: food.suggestions.map { |suggestion| 
-  #   render partial: "api/suggestions/suggestion.json.jb", locals: {suggestion: :suggestion} }
-  #suggestions: (render partial: "api/suggestions/suggestion.json.jb", locals: {suggestion: food.suggestion})
   healthy_options: food.healthy_options.map { |healthy_food| 
     {
       id: healthy_food.id,
