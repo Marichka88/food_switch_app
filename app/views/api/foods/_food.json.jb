@@ -7,6 +7,8 @@
   saturated_fat: food.saturated_fat,
   sugar: food.sugar,
   sodium: food.sodium,
+  image_url: food.image_url,
+  stars: food.stars,
   default_filter: food.default_filter,
   diet_names: food.diets.map {|diet| diet.name },
   healthy_options: food.healthy_options.map { |healthy_food| 
