@@ -87,7 +87,7 @@
  # food.save
 
  # food = Food.find_by(id:23)
- # food.image_url="/images/frozenbananas.jpg"
+ # food.image_url="/images/lemoncake.jpg"
  # food.save
 
  # food = Food.find_by(id:24)
